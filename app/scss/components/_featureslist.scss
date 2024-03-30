@@ -54,6 +54,8 @@
     gap: 40px;
     flex-wrap: wrap;
     justify-content: center;
+    padding-block-start: 0px;
+    padding-block-end: 0px;
     @include u.breakpoint(large) {
       flex-wrap: nowrap;
       gap: 5.5%;

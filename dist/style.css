@@ -472,6 +472,8 @@ a:active {
   gap: 40px;
   flex-wrap: wrap;
   justify-content: center;
+  padding-block-start: 0px;
+  padding-block-end: 0px;
 }
 @media (min-width: 56.25em) {
   .featureslist__itemwrapper {
@@ -623,6 +625,7 @@ a:active {
 }
 .faq__wrapper {
   padding-block-end: 0px;
+  padding-block-start: 0px;
 }
 .faq__heading {
   text-align: center;

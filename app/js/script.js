@@ -19,7 +19,7 @@ const FAQData = [
     ],
   },
   {
-    question: 'Can it be used on colored hair?',
+    question: 'Can it be used on dyed hair?',
     answer: [
       `Yes, Ayurvedic hair oil products are generally safe to use on colored hair. However, it's advisable to perform a patch test before applying the oil to your entire scalp and hair, especially if you have recently colored your hair or have sensitive skin. This helps ensure that there are no adverse reactions or interactions with the hair dye.`,
     ],
