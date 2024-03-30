@@ -391,6 +391,7 @@ a:active {
   justify-content: center;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 @media (min-width: 56.25em) {
   .features__listwrapper {
@@ -404,6 +405,7 @@ a:active {
 }
 .features__content {
   margin-block-end: 2rem;
+  text-align: center;
 }
 @media (min-width: 56.25em) {
   .features__image {

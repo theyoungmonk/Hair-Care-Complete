@@ -27,6 +27,7 @@
     justify-content: center;
     margin: 0;
     padding: 0;
+    width: 100%;
     @include u.breakpoint(large) {
       flex-wrap: nowrap;
       gap: 5.5%;
@@ -38,6 +39,7 @@
   }
   &__content {
     margin-block-end: u.rem(32);
+    text-align: center;
   }
   &__image {
     // width: 61%;
