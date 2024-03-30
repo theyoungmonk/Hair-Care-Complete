@@ -1,0 +1,67 @@
+@use '../util' as u;
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  max-height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: u.$font;
+  background-color: var(--background-color);
+  color: var(--text-dark);
+  // temporary, remove after website is complete
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+figure,
+blockquote {
+  margin: 0;
+}
+
+header ul,
+footer ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style-type: none;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+
+  &:focus {
+    left: 0;
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    padding: 0.5 rem;
+    border: 1px solid;
+  }
+}
+
+.hover-fade {
+  &:hover {
+    opacity: 0.9;
+  }
+}

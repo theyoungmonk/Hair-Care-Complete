@@ -1,0 +1,27 @@
+$gap: 116px;
+
+@keyframes slideup {
+  0% {
+    transform: translateY(calc(0% - #{$gap}));
+  }
+  100% {
+    transform: translateY(calc(-50% - #{$gap} - 8px));
+  }
+}
+
+@keyframes slidedown {
+  0% {
+    transform: translateY(calc(-50% - #{$gap} - 8px));
+  }
+  100% {
+    transform: translateY(calc(0% - #{$gap}));
+  }
+}
+
+.slide-up {
+  animation: slideup 12s linear infinite;
+}
+
+.slide-down {
+  animation: slidedown 12s linear infinite;
+}

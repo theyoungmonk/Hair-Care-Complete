@@ -1,0 +1,59 @@
+@use '../util' as u;
+
+.contact {
+  background: linear-gradient(
+    90deg,
+    var(--gradient1),
+    var(--gradient2) 75%,
+    var(--gradient3) 150%
+  );
+
+  @include u.breakpoint(large) {
+    background: linear-gradient(
+      90deg,
+      var(--gradient1),
+      var(--gradient2) 55%,
+      var(--gradient3) 110%
+    );
+  }
+  &__wrapper {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include u.breakpoint(large) {
+      flex-wrap: nowrap;
+      gap: 5.5%;
+    }
+  }
+  &__item {
+    text-align: center;
+
+    @include u.breakpoint(large) {
+      flex: 1;
+      text-align: start;
+    }
+  }
+
+  &__icon {
+    height: u.rem(48);
+    width: auto;
+    margin-block-end: 10px;
+
+    @include u.breakpoint-down(medium) {
+      margin-inline: auto;
+    }
+  }
+  &__title {
+    margin-block-end: u.rem(10);
+  }
+
+  &__description {
+    margin-block-end: 0;
+    max-width: 50ch;
+  }
+
+  &__detail {
+    margin-block-start: 10px;
+  }
+}
