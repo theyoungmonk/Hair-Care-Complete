@@ -12,7 +12,7 @@
     grid-template-columns: 1fr;
     gap: 40px;
     justify-items: center;
-    padding-block: 30px 60px;
+    padding-block: 60px 60px;
     @include u.breakpoint(large) {
       // flex-direction: row-reverse;
       grid-template-columns: 1fr 1fr;
@@ -34,7 +34,7 @@
     }
   }
   &__title {
-    margin-block-start: u.rem(100);
+    margin-block-start: u.rem(0);
     margin-block-end: u.rem(24);
   }
   &__content {
